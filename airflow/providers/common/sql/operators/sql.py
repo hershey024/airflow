@@ -585,6 +585,7 @@ class SQLTableCheckOperator(BaseSQLOperator):
         partition_clause: str | None = None,
         conn_id: str | None = None,
         database: str | None = None,
+        accept_none: bool = True,
         **kwargs,
     ):
         super().__init__(conn_id=conn_id, database=database, **kwargs)
